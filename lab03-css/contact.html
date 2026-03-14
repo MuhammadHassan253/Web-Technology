@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Riwayat Couture</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="schedule.html">Schedule</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<h1>Contact Us</h1>
+
+<div class="contact-container">
+    <form id="contactForm">
+        <label>Full Name</label>
+        <input type="text" id="name" required placeholder="Your full name">
+
+        <label>Email Address</label>
+        <input type="email" id="email" required placeholder="your@email.com">
+
+        <label>Message</label>
+        <textarea id="message" rows="6" required placeholder="Write your message here..."></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+</div>
+
+<script>
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const message = document.getElementById('message').value;
+
+        if (name && email && message) {
+            alert("✅ Message Sent Successfully!\n\nName: " + name + "\nEmail: " + email);
+            this.reset();
+        } else {
+            alert("❌ Please fill all fields");
+        }
+    });
+</script>
+
+</body>
+</html>

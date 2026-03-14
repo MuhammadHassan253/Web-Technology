@@ -1,0 +1,178 @@
+/* main.css - Lab 03 & 04 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+nav {
+    background: #1e7881;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+h1 {
+    text-align: center;
+    color: #06dfc4;
+    padding: 40px 20px;
+    background: white;
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #337fd6;
+    margin: 30px 0 15px;
+    text-align: center;
+}
+
+section {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Table Styling - Task 12 */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px auto;
+    background: white;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 16px 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+th {
+    background: #2419ae;
+    color: white;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f8d7da;   /* zebra striping */
+}
+
+tr:hover {
+    background-color: #ffe6e6;
+    transition: 0.3s;
+}
+
+.lunch {
+    background-color: #fff3cd !important;
+    font-weight: bold;
+    color: #856404;
+}
+
+
+/* Gallery Styling - Task 4 */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.gallery img:hover {
+    transform: scale(1.08);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.25);
+}
+
+/* Beautiful Contact Form Styling */
+.contact-container {
+    max-width: 600px;
+    margin: 40px auto;
+    background: white;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.contact-container label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.contact-container input,
+.contact-container textarea {
+    width: 100%;
+    padding: 14px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    transition: all 0.3s;
+}
+
+.contact-container input:focus,
+.contact-container textarea:focus {
+    border-color: #d63384;
+    box-shadow: 0 0 0 3px rgba(214, 51, 132, 0.2);
+    outline: none;
+}
+
+.contact-container button {
+    width: 100%;
+    padding: 16px;
+    background: #d63384;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.contact-container button:hover {
+    background: #b02a6d;
+    transform: translateY(-3px);
+}
+
+.success-msg {
+    text-align: center;
+    color: green;
+    font-size: 18px;
+    margin-top: 20px;
+    display: none;
+}
