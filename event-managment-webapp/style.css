@@ -1,0 +1,169 @@
+/* General */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+/* Header */
+
+header {
+    background-color: #1e3a8a;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+/* Search Section */
+
+.search-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.search-section input {
+    width: 60%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+/* Event Section */
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Event Cards */
+
+#eventList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.event-card {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.event-card:hover {
+    transform: scale(1.03);
+}
+
+/* Upcoming Event */
+
+.upcoming {
+    border-left: 6px solid green;
+}
+
+/* Past Event */
+
+.past {
+    background-color: lightgray;
+    border-left: 6px solid red;
+}
+
+/* Delete Button */
+
+.delete-btn {
+    margin-top: 10px;
+    background-color: crimson;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.delete-btn:hover {
+    background-color: darkred;
+}
+
+/* Form */
+
+.form-section {
+    margin-top: 30px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form input,
+form textarea {
+    padding: 10px;
+    margin-top: 5px;
+}
+
+form button {
+    margin-top: 15px;
+    padding: 12px;
+    background-color: #1e3a8a;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+form button:hover {
+    background-color: #14285f;
+}
+
+/* Warning Message */
+
+#warningMessage {
+    color: red;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Footer */
+
+footer {
+    margin-top: 30px;
+    background-color: #1e3a8a;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+
+    .search-section input {
+        width: 90%;
+    }
+
+    body {
+        padding: 10px;
+    }
+
+}
